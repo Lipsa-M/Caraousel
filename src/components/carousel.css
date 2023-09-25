@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins',sans-serif;
+		}
+		.main{
+			width: 100%;
+			height: 840px;
+			/*background: red;*/
+			margin: 10px auto;
+			position: relative;
+			padding: 5px 0;
+		}
+		.main .text{
+            padding-left: 25px;
+			color: #554;
+		}
+		.text h1{
+			font-size: 50px;
+            
+		}
+		.text p{
+			width: 60%;
+			padding: 5px;
+			margin: auto;
+			line-height: 30px;
+		}
+		.main header{
+			width: 98%;
+			height: -10px;
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			justify-content: space-between;
+			
+		}
+    
+		header p span{
+			font-size: 30px;
+		    margin: 0 5px;
+		    cursor: pointer;
+		    color: #161515;
+		     width: 40px;
+		    height: 40px;
+		    display: inline-block;
+		    line-height: 37px;
+		    text-align: center;
+		    border-radius: 20px;
+		}
+		header p span:hover{
+			background: #EB5757;
+    		color: white;
+		}
+		.section{
+			width: 98%;
+			height: 600px;
+			margin: auto;
+			display: flex;			
+			overflow-x: auto;
+		}
+		.section::-webkit-scrollbar{
+			display: none;
+		}
+		.section .product{
+			min-width: 20%;
+			height: 75%;
+			background: whitesmoke;
+			margin:  0 20px  0 0;
+			position: relative;
+			left: 0px;
+			transition: 0.5s;
+
+		}
+		picture{
+			width: 100%;
+			height: 70%;			
+			display: flex;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		picture img{
+			width: 100%;
+            top: -18px;
+            width: 400px;
+            display: flex;
+            right: 18px;
+			border-top-left-radius: 7px;
+			border-top-right-radius: 7px;
+           
+		}
+		.detail,
+		.button{
+			
+			display: flex;
+            position: relative;
+            top: -40px;
+			margin: auto;
+			padding: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #0c0c0c;
+            margin-left: 10px;
+		}
+        .detail{
+            margin-top: 45px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: flex-start;
+			font-size: 20px;
+        }
+        .ratting{
+            width: 45px;
+            margin-inline-start: 10px;
+            display: flex;
+            background: #e8d829;
+            justify-content: center;
+            flex-direction: row-reverse;
+
+        }
+		small{color: #141313;}
+		a{
+			 text-decoration: none; 
+            height:25px;
+		    font-size: 12px;
+		    margin: 7px 0 0 20px;
+		     width: 25px;
+		    background: #e8d829;
+		    color: white;
+            top: -80px;
+            left: -160px;
+            position: relative; 
+          
+            
+		 }
+		p.star{
+			margin-right: 80px;
+		    width: 65%;
+		    font-size: 22px;
+		    color: #808080;
+            position: relative;
+            bottom: 10px;
+		}
+		@media screen and  (max-width: 800px) {
+            .left, .main, .right{
+                width: 100%;
+            }
+			.text h1{
+				font-size: 35px;
+			}
+			.text p{
+				width: 90%;
+			}
+			
+            header h1{
+                font-size: 25px;
+            }
+			header p span{
+				font-size: 30px;
+			}
+			.section .product {
+				min-width: 49%;
+				margin:  0 10px  0 0;
+			}
+			.detail, .button{
+				font-size: 16px;
+			}	
+
+           
+		}
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+         
+    .time{
+    left: 5px;
+    position: relative;
+    font-size: 16px;
+    top:-40px;
+    margin-left: 10px;
+    }
+   
